@@ -1,0 +1,2 @@
+import Link from "next/link";
+export function SiteHeader(){return <header className="nav-wrap"><Link className="logo" href="/"><span>QA</span>Qamar Abbas</Link><nav aria-label="Primary navigation"><Link href="/work">Case Studies</Link><Link href="/creatives">Creatives</Link><Link href="/about">About</Link><Link href="/contact">Contact</Link></nav><Link className="nav-cta" href="/contact">Let's talk <span>-&gt;</span></Link></header>}
