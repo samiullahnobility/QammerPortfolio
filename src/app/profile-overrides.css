@@ -1085,3 +1085,11 @@ h2 {
     translate: 0;
   }
 }
+.case-study-card > div {
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.case-study-card img {
+  object-fit: contain;
+}
