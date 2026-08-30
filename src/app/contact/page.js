@@ -17,11 +17,20 @@ function WhatsAppIcon() {
   );
 }
 
+function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" strokeWidth="2" />
+      <circle cx="12" cy="12" r="4.25" fill="none" stroke="currentColor" strokeWidth="2" />
+      <circle cx="18" cy="6" r="1.25" fill="currentColor" />
+    </svg>
+  );
+}
+
 export default function Contact() {
   const methods = [
     { label: "Email", value: profile.email, href: `mailto:${profile.email}` },
     { label: "Phone", value: profile.phone, href: `tel:${profile.phoneHref}` },
-    { label: "Instagram", value: profile.instagram, href: profile.instagramHref, external: true },
     { label: "Location", value: profile.address, href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(profile.address)}`, external: true },
   ];
 
@@ -47,6 +56,11 @@ export default function Contact() {
           </header>
 
           <div className="contact-v2-grid">
+            <a className="contact-v2-instagram-card" href={profile.instagramHref} target="_blank" rel="noreferrer" aria-label="Follow Qamar Abbas on Instagram">
+              <div className="contact-v2-instagram-top"><span className="contact-v2-instagram-card-icon"><InstagramIcon /></span><span>Follow my work</span></div>
+              <div><small>Instagram</small><h2>See my latest<br />creative work.</h2><p>Follow {profile.instagram} for campaigns, content, and project updates.</p></div>
+              <b>Open Instagram <span>↗</span></b>
+            </a>
             <div className="contact-v2-methods">
               {methods.map((method, index) => (
                 <a key={method.label} href={method.href} target={method.external ? "_blank" : undefined} rel={method.external ? "noreferrer" : undefined}>
