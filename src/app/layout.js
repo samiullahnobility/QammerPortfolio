@@ -1,16 +1,18 @@
-import { DM_Sans, Oswald } from "next/font/google";
 import "./globals.css";
 import "./profile-overrides.css";
 import { MotionObserver } from "@/src/components/MotionObserver";
 
-const bodyFont = DM_Sans({ subsets: ["latin"], variable: "--font-body", display: "swap" });
-const displayFont = Oswald({ subsets: ["latin"], variable: "--font-display", display: "swap" });
-
 export const metadata = {
-  title: "Qamar Abbas — Performance Marketer",
-  description: "Selected Meta Ads, Shopify growth and social media creative work by Qamar Abbas.",
+  title: {
+    default: "Qamar Abbas | Meta Ads & Shopify Growth Specialist",
+    template: "%s | Qamar Abbas",
+  },
+  description: "Qamar Abbas is a digital marketer and Shopify specialist helping e-commerce brands grow through Meta Ads, conversion-focused stores, social media strategy and performance creative.",
+  keywords: ["Meta Ads specialist", "Shopify developer", "e-commerce marketer", "social media marketer", "Facebook Ads manager", "Shopify growth specialist", "Qamar Abbas"],
+  authors: [{ name: "Qamar Abbas" }],
+  creator: "Qamar Abbas",
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="en"><body className={`${bodyFont.variable} ${displayFont.variable}`}><MotionObserver />{children}</body></html>;
+  return <html lang="en"><body><MotionObserver />{children}</body></html>;
 }

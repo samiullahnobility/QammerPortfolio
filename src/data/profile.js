@@ -1,6 +1,6 @@
 export const profile = {
   name: "Qamar Abbas",
-  title: "Digital Marketer & Shopify Developer",
+  title: "Meta Ads & Shopify Growth Specialist",
   phone: "+92 306 3783658",
   phoneHref: "+923063783658",
   email: "qamarzamannaul@gmail.com",
@@ -8,5 +8,5 @@ export const profile = {
   instagram: "@qamar_ecom",
   instagramHref: "https://instagram.com/qamar_ecom",
   about:
-    "I'm a passionate and self-driven Digital Marketer and Shopify Developer with hands-on experience in building and managing eCommerce stores. With a strong foundation in information technology and a focus on creative design and targeted marketing, I aim to deliver impactful results for clients and businesses. I'm always eager to learn, grow, and take on new challenges that enhance both personal and professional growth.",
+    "I’m a digital marketer and Shopify specialist focused on helping e-commerce brands turn traffic into measurable growth. My work combines Meta Ads campaign management, Shopify store development, performance reporting, social media strategy and conversion-focused creative. With a technical foundation in information technology and hands-on marketing experience, I connect creative execution with commercial goals.",
 };

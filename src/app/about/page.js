@@ -5,7 +5,7 @@ import { profile } from "@/src/data/profile";
 import { services } from "@/src/data/services";
 import { education, experience, hobbies, languages, references, workingSkills } from "@/src/data/resume";
 
-export const metadata = { title: "About - Qamar Abbas" };
+export const metadata = { title: "About Qamar Abbas, Digital Marketer", description: "Learn about Qamar Abbas, a Meta Ads, Shopify and social media marketing specialist with hands-on experience in e-commerce growth and performance creative." };
 
 export default function About() {
   return (
@@ -14,8 +14,8 @@ export default function About() {
       <main>
         <section className="about-grid about-resume-hero">
           <div>
-            <p className="section-index">About Qamar</p>
-            <h1>Creative<br /><em>meets data.</em></h1>
+            <p className="section-index">About Qamar Abbas</p>
+            <h1>Digital marketing<br /><em>for e-commerce growth.</em></h1>
             <p className="lead">{profile.about}</p>
             <div className="resume-quicklinks" aria-label="Resume sections">
               <a href="#experience">Experience</a>
@@ -31,8 +31,8 @@ export default function About() {
 
         <section className="expertise">
           <div>
-            <p className="section-index light">Capabilities</p>
-            <h2>Built for<br /><em>growth.</em></h2>
+            <p className="section-index light">Digital marketing services</p>
+            <h2>Strategy, creative<br /><em>and conversion.</em></h2>
           </div>
           <div className="service-list">
             {services.map((service) => (
@@ -47,7 +47,7 @@ export default function About() {
         <section className="resume-section" id="experience">
           <div className="section-head">
             <p className="section-index">Work experience</p>
-            <h2>Hands-on<br /><em>e-commerce growth.</em></h2>
+            <h2>Hands-on digital<br /><em>marketing experience.</em></h2>
           </div>
           <div className="timeline">
             {experience.map((item) => (
@@ -86,7 +86,7 @@ export default function About() {
         <section className="resume-section resume-split" id="skills">
           <div>
             <p className="section-index">Working skills</p>
-            <h2>Strategy,<br /><em>stores and content.</em></h2>
+            <h2>Meta Ads, Shopify<br /><em>and social content.</em></h2>
           </div>
           <div className="resume-stack">
             <div className="skill-cloud">

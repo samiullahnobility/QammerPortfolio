@@ -100,6 +100,6 @@ export const shopifyImages = Array.from({ length: 20 }, (_, index) => ({
 }));
 
 export const caseStudies = [
-  { slug: "meta-ads", eyebrow: "Paid Social", title: "Meta Ads Performance Archive", summary: "Campaign and ad-set reporting across multiple accounts, objectives and reporting windows.", cover: "/images/qamar/homepagepics/Meta Home Pic.jpeg", count: 20 },
-  { slug: "shopify-growth", eyebrow: "E-commerce", title: "Shopify Growth Dashboards", summary: "Commerce reporting across sales, sessions, orders and conversion-rate movement.", cover: "/images/qamar/homepagepics/Shopify Home pic.jpeg", count: 20 },
+  { slug: "meta-ads", eyebrow: "Meta Ads Management", title: "Meta Ads Campaign Performance", summary: "Facebook and Instagram campaign reporting across purchases, reach, impressions, CTR, CPC and ROAS.", cover: "/images/qamar/homepagepics/Meta Home Pic.jpeg", count: 20 },
+  { slug: "shopify-growth", eyebrow: "Shopify Growth", title: "Shopify E-commerce Performance", summary: "Shopify analytics across sales, sessions, orders, conversion rate and period-over-period growth.", cover: "/images/qamar/homepagepics/Shopify Home pic.jpeg", count: 20 },
 ];
